@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SignUp</title>
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" href="">  
+  <script src="script.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- bootstrap demo w3s -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- end -->
+
+</head>
+
+<body id='main-body'>
+  <nav class="fixed-top">
+    <div id="menu-top">
+
+      <div class="menu">
+        <ul>
+          <li class="icon-home">
+            <a href="#" onclick="Home()">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATAAAACmCAMAAABqbSMrAAAAt1BMVEX///8AADTXFjVXXXoAAEUAADf3+PoABUgAAkheY38AFE0AADkAAD4AAEEAADsAADVkaoWanq80PGS6vMfs7fHHyNFIUHNZX31DSm2AhJpuIU3dFTPS1NtzeJFiIU4AADCRlafhaXbVAB/0ztItNV7h4+irrrw5QWeztsKIjaEADUp2fJQiLVvLzdVPV3fx8vUOHVLdACsAAClyPmFkAD3aztUbJ1cAACcIGlAAE1BmO19XAD8gK1o1hKJ6AAAEC0lEQVR4nO3Ya3uiRhyG8ZkqBIERPCF2tbitYjwEbdomm3a//+cq6gCDxo1Zs6/2/r3IBeOfYXg4ToQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAT6qXNbTs3mgNn1abyYNZuIzGeuk+MirDqK+XptFAL83jzD4sDKJWVdg4U/YohB1N9NIkOm4rtvFIN6WxMZJxdBjs9Lg2ivvlL2nmrmajsnSd1QrztTD9RhDXSh8ty3Kc/M9jp2jrd6V0ZkrKzCgMlXM8knHgd6rmmdocF3qB1ysap8lhy60v52Xhpnl3yqpysL2uXloEOrB+kpXdlT3nJ8FT+WATfSYaSRHY+C5Idpt28lhsFTe9fWGoC5XjJMHGvi6Vt7iOuWY7Xmt/oOOFN6taQ0ctDr+unKYRWHflH4Y0b9+p6rAacl/SlcaluFFNbeVqvhGYXwQWt4vAZEM3deSg6mcgjb2LodSBjaW33O7HsYz0T5EUtcK824m3vJjBu7hNc63lFfdCZuwgVGGwb4+80LzCui+Z3F/pO9VqV4HZbjAW62BS1YnlSFv+9av29z/VBu8IbGr0WgZ25xlX4UEkt6eF2/I6vlEtsLl8Khbttiqbw2AbJfdilIwezHPcVfZOjsUwSVPZMzvZpcHm9b19/vPT0e9/lG23BpZa5sk5iKR9WvhjAkuDKo8wKO+aUPZtR3WChejVAvPF3NstgzA/LPMcp22l+uJVnz/9clQLbKGX3gzMWo9z+uFYBDa0qheIFgX1wA635Oi06vvUAhsF1fA6QfliyQPLHxRKbU8Ds8V9oJ7ESWBi2L4Xr3s1MOXOjlz/jcB8lSTJs37oF4E9BWe7iZwvX1y3qQ9g2Jx1m2r2UQ/9KwMTnef8ijsLTEyS+VlgI3l2zrUbA/NaaafT0fs6CWygVi9Kbx81F7mZPm1DZ+Mo94PyOrklrUu3ZP53P87zwMT+gG4L7PpbUk6NvorAIutwjw6euq5VBHb2lpwGM/ExrnroF++j1wLbuz6wH/DQ73jrYkBBGdjZW3IUrMWHOP2sKLrNvGpwtwY2mmjrf3/T/vu4zwrb93TNtwITX5NLZ/F96oEZH67GW/jWwDZNR3u58cN1avRafof19Idr/+ulW3JfOJYf813hqNpqvxscp0YNozEsJyG9xJwaeUVgtQlMHlhyKbDS1VMj388nOdbzoXyQTI1eq6lRT1nyJR+0n+jt42YgpUzcWuGktvV3a2QnDb1wdzb5Lqe5D3Ft8l0ElsYDs74Tz81VMWmdya6dfB//QRAdOhzH5hTamHzbnchdbcK0GM9x8t0Ii8LtcT/xha9DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AT+B5h7WhFYmalPAAAAAElFTkSuQmCC" alt="Logo">
+            </a>
+          </li>
+          <!-- <li id="search"> -->
+          <li class="search-background">
+            <input id="search-keyword" type="text" name="textMail" placeholder="  What are you looking for today?" />
+            <button class='btn-search'>
+              <i class="fa fa-search"></i>
+            </button>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="Home()">Home</a>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="filterGender()">Gender</a>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="filterClothes()">Clothes</a>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="filterShoe()">Shoe</a>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="filterDeals()">Deals</a>
+          </li>
+          <li>
+            <a href="#footer" class="active">Services</a>
+          </li>
+          <li>
+            <a href='#' class="cart">
+              <span class="icon-cart">
+                <span href="#" id="shopping-cart">
+                  <span class="shopping-cart" style="font-size:36px"></span>
+                </span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <span id="count-item" data-count="0">0 item</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <p class="welcome"> Shopping with Tommy Hilfiger</p>
+
+  <div id="hometext-slide">
+    <marquee class="slide-welcome">
+      <p class="running-text">
+        <strong>
+          <span style="color:#34495E">Thank you for visiting our store!!</span>
+          <span style="color:#FDFEFE"></span>
+          <span style="color:#EC7063"></span>
+        </strong>
+      </p>
+    </marquee>
+  </div>
+  
+  <form action="https://httpbin.org/post">
+  <div id="container">
+Name : <input id="name" placeholder="Ex.Jack " required> 
+<br>
+  <br>
+  Email Address : <span id="emailID" ></span>
+  <br>
+  <br>
+  Address : <input id="address" required>
+  <br>
+  <br>
+  City : <input type="text" list="cities" required>
+<datalist id="cities">
+    <option value="Toronto"> Toronto </option>
+    <option value="Vancouver"> Vancouver </option> 
+    <option value="Quebec City"> Quebec City </option>
+    <option value="Ottawa"> Ottawa </option>
+    <option value="Montreal"> Montreal </option>
+</datalist>
+  <br>
+  <br>
+  Postal Code : <input id="pc" placeholder="A1A1A1 " pattern="^[A-Z][1-9][A-Z][1-9][A-Z][1-9]*" required>
+  <br>
+  <br>
+  Question :  <input id="ques" type="radio" name="option" value="option"> 
+  <br>
+  <br>
+  Comment :  <input id="comment" type="radio" name="option" value="option" > 
+  <br>
+  <br>
+  Order Problem :  <input id="order" onclick="yesnoCheck();" type="radio" name="option" value="option" >  <input type="hidden" id="show" >
+   <br>
+  <br>
+  Message : <textarea ></textarea>
+  <br>
+  <br>
+  <input type="hidden" value="Chesta" >
+<input type="submit" >
+  </div>
+  
+  
+  </form>
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="col-1">
+        <h3>Shop</h3>
+        <ul>
+          <li>
+            <a href="#">Offer</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <h3>Support</h3>
+        <ul>
+          <li>
+            <a href="#">Live Chat</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Service Location</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <h3>About Us</h3>
+        <ul>
+          <li>
+            <a href="#">Name: Chesta Choudhary</a>
+          </li>
+          <li>
+            <a href="#">Email: cchesta@myseneca.ca</a>
+          </li>
+        </ul>
+
+    </div>
+    <div class="following">
+      <h3>Follow Us</h3>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+  </footer>
+
+  <script>
+ document.getElementById("emailID").innerHTML = localStorage.getItem("value");
+
+    
+function yesnoCheck() {
+    if (document.getElementById('ques').checked) {
+        document.getElementById('show').type = 'hidden';
+    } 
+    else if (document.getElementById('comment').checked) {
+        document.getElementById('show').type = 'hidden';
+    }
+    else if (document.getElementById('order').checked) {
+        document.getElementById('show').type = 'text';
+    }
+    }
+
+    $(document).on('click', '.button-buy-now', function (event) {
+      event.preventDefault();
+
+      if($(this).hasClass('disable')) return false;
+      $(document).find('.button-buy-now').addClass('disable');
+      
+      var parent = $(this).parents('.product');
+      var cart = $(document).find('#shopping-cart');
+      var src = parent.find('img').attr('src');
+      var topLocation = parent.offset().top;
+      var leftLocation = parent.offset().left;
+
+      $('<img />', {
+        class: 'img-child',
+        src: src
+      }).appendTo('body').css({
+        'top': parseInt(topLocation),
+        'left': parseInt(leftLocation) + 145
+      });
+
+      setTimeout(function () {
+        $(document).find('.img-child').css({
+          'top': cart.offset().top,
+          'left': cart.offset().left
+        });
+        setTimeout(function () {
+          $(document).find('.img-child').remove();
+          $(document).find('.button-buy-now').removeClass('disable');
+        }, 1100);
+      }, 400)
+    });
+  </script>
+
+<script>
+    filterGender = () => {
+      let filterProducts = document.querySelector('.list-products')
+      filterProducts.innerHTML = ''
+      productsGender = products.filter(x => x.category === 'Gender')
+
+      filterProducts.innerHTML = productsGender.map((item, index) =>
+        `<div class="product" index=${index}> 
+          <div class="img-product">
+            <a href="#"><img src='${item.image}' /></a>
+            <div class="link-detail-cart">
+              <a name="active-ele" class="link-detail" onclick="handleShowDesc(${index})" >
+                <i class="fa fa-info"></i>
+              </a>
+              <a href="javascript:void(0)" class='add-to-cart button-buy-now'>
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        <div class='name-price'>
+          <a href="#">${item.name} </a>
+          <span>${item.price}</span>
+          <span>${item.priceSale}</span>
+        </div>
+        <div class="brand-product"><a href="#">${item.brand}</a></div>
+        <div index=${index} name='description-product' class="description">
+          <p>${item.desc}</p>
+          <button onclick="handleIgnoreDesc(${index})">X</button>
+        </div>
+      </div>`
+      ).join('')
+    }
+
+    filterClothes = () => {
+      let filterProducts = document.querySelector('.list-products')
+      filterProducts.innerHTML = ''
+      productsClothes = products.filter(x => x.category === 'Clothes')
+
+      filterProducts.innerHTML = productsLaptop.map((item, index) =>
+        `<div class="product" index=${index}> 
+          <div class="img-product">
+            <a href="#"><img src='${item.image}' /></a>
+            <div class="link-detail-cart">
+              <a name="active-ele" class="link-detail" onclick="handleShowDesc(${index})" >
+                <i class="fa fa-info"></i>
+              </a>
+              <a href="javascript:void(0)" class='add-to-cart button-buy-now'>
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        <div class='name-price'>
+          <a href="#">${item.name} </a>
+          <span>${item.price}</span>
+          <span>${item.priceSale}</span>
+        </div>
+        <div class="brand-product"><a href="#">${item.brand}</a></div>
+        <div index=${index} name='description-product' class="description">
+          <p>${item.desc}</p>
+          <button onclick="handleIgnoreDesc(${index})">X</button>
+        </div>
+      </div>`
+      ).join('')
+    }
+
+
+    filterShoe = () => {
+      let filterProducts = document.querySelector('.list-products')
+      filterProducts.innerHTML = ''
+      productsShoe = products.filter(x => x.category === 'Shoe')
+
+
+      filterProducts.innerHTML = productsShoe.map((item, index) =>
+        `<div class="product" index=${index}> 
+          <div class="img-product">
+            <a href="#"><img src='${item.image}' /></a>
+            <div class="link-detail-cart">
+              <a name="active-ele" class="link-detail" onclick="handleShowDesc(${index})" >
+                <i class="fa fa-info"></i>
+              </a>
+              <a href="javascript:void(0)" class='add-to-cart button-buy-now'>
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        <div class='name-price'>
+          <a href="#">${item.name} </a>
+          <span>${item.price}</span>
+          <span>${item.priceSale}</span>
+        </div>
+        <div class="brand-product"><a href="#">${item.brand}</a></div>
+        <div index=${index} name='description-product' class="description">
+          <p>${item.desc}</p>
+          <button onclick="handleIgnoreDesc(${index})">X</button>
+        </div>
+      </div>`).join('')
+    }
+
+    filterDeals = () => {
+      let filterProducts = document.querySelector('.list-products')
+      filterProducts.innerHTML = ''
+
+      productsDeals = products.filter(x => x.deal === 'Yes')
+
+      filterProducts.innerHTML = productsDeals.map((item, index) =>
+        `<div class="product" index=${index}> 
+          <div class="img-product">
+            <a href="#"><img src='${item.image}' /></a>
+            <div class="link-detail-cart">
+              <a name="active-ele" class="link-detail" onclick="handleShowDesc(${index})" >
+                <i class="fa fa-info"></i>
+              </a>
+              <a href="javascript:void(0)" class='add-to-cart button-buy-now'>
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        <div class='name-price'>
+          <a href="#">${item.name} </a>
+          <span>${item.price}</span>
+          <span>${item.priceSale}</span>
+        </div>
+        <div class="brand-product"><a href="#">${item.brand}</a></div>
+        <div index=${index} name='description-product' class="description">
+          <p>${item.desc}</p>
+          <button onclick="handleIgnoreDesc(${index})">X</button>
+        </div>
+      </div>`
+
+      ).join('')
+    }
+
+    handleShowDesc = (index) => {
+      let target = document.querySelectorAll('div[name=description-product]')
+      console.log('target element', targetEle)
+      for (let i = 0; i < targetEle.length; i++) {
+        target[i].classList.remove('active-ele')
+      }
+      target[index].classList.add('active-ele')
+    }
+
+    handleIgnoreDesc = () => {
+      let target = document.querySelectorAll('div[name=description-product]')
+      for (let i = 0; i < target.length; i++) {
+        target[i].classList.remove('active-ele')
+      }
+    }
+  </script>
+
+</body>
+
+</html>
