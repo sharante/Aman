@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" href="">  
+  <script src="script.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- bootstrap demo w3s -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- end -->
+
+</head>
+
+<body id='main-body'>
+  <nav class="fixed-top">
+    <div id="menu-top">
+
+      <div class="menu">
+        <ul>
+          <li class="icon-home">
+            <a href="#" onclick="Home()">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATAAAACmCAMAAABqbSMrAAAAt1BMVEX///8AADTXFjVXXXoAAEUAADf3+PoABUgAAkheY38AFE0AADkAAD4AAEEAADsAADVkaoWanq80PGS6vMfs7fHHyNFIUHNZX31DSm2AhJpuIU3dFTPS1NtzeJFiIU4AADCRlafhaXbVAB/0ztItNV7h4+irrrw5QWeztsKIjaEADUp2fJQiLVvLzdVPV3fx8vUOHVLdACsAAClyPmFkAD3aztUbJ1cAACcIGlAAE1BmO19XAD8gK1o1hKJ6AAAEC0lEQVR4nO3Ya3uiRhyG8ZkqBIERPCF2tbitYjwEbdomm3a//+cq6gCDxo1Zs6/2/r3IBeOfYXg4ToQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAT6qXNbTs3mgNn1abyYNZuIzGeuk+MirDqK+XptFAL83jzD4sDKJWVdg4U/YohB1N9NIkOm4rtvFIN6WxMZJxdBjs9Lg2ivvlL2nmrmajsnSd1QrztTD9RhDXSh8ty3Kc/M9jp2jrd6V0ZkrKzCgMlXM8knHgd6rmmdocF3qB1ysap8lhy60v52Xhpnl3yqpysL2uXloEOrB+kpXdlT3nJ8FT+WATfSYaSRHY+C5Idpt28lhsFTe9fWGoC5XjJMHGvi6Vt7iOuWY7Xmt/oOOFN6taQ0ctDr+unKYRWHflH4Y0b9+p6rAacl/SlcaluFFNbeVqvhGYXwQWt4vAZEM3deSg6mcgjb2LodSBjaW33O7HsYz0T5EUtcK824m3vJjBu7hNc63lFfdCZuwgVGGwb4+80LzCui+Z3F/pO9VqV4HZbjAW62BS1YnlSFv+9av29z/VBu8IbGr0WgZ25xlX4UEkt6eF2/I6vlEtsLl8Khbttiqbw2AbJfdilIwezHPcVfZOjsUwSVPZMzvZpcHm9b19/vPT0e9/lG23BpZa5sk5iKR9WvhjAkuDKo8wKO+aUPZtR3WChejVAvPF3NstgzA/LPMcp22l+uJVnz/9clQLbKGX3gzMWo9z+uFYBDa0qheIFgX1wA635Oi06vvUAhsF1fA6QfliyQPLHxRKbU8Ds8V9oJ7ESWBi2L4Xr3s1MOXOjlz/jcB8lSTJs37oF4E9BWe7iZwvX1y3qQ9g2Jx1m2r2UQ/9KwMTnef8ijsLTEyS+VlgI3l2zrUbA/NaaafT0fs6CWygVi9Kbx81F7mZPm1DZ+Mo94PyOrklrUu3ZP53P87zwMT+gG4L7PpbUk6NvorAIutwjw6euq5VBHb2lpwGM/ExrnroF++j1wLbuz6wH/DQ73jrYkBBGdjZW3IUrMWHOP2sKLrNvGpwtwY2mmjrf3/T/vu4zwrb93TNtwITX5NLZ/F96oEZH67GW/jWwDZNR3u58cN1avRafof19Idr/+ulW3JfOJYf813hqNpqvxscp0YNozEsJyG9xJwaeUVgtQlMHlhyKbDS1VMj388nOdbzoXyQTI1eq6lRT1nyJR+0n+jt42YgpUzcWuGktvV3a2QnDb1wdzb5Lqe5D3Ft8l0ElsYDs74Tz81VMWmdya6dfB//QRAdOhzH5hTamHzbnchdbcK0GM9x8t0Ii8LtcT/xha9DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AT+B5h7WhFYmalPAAAAAElFTkSuQmCC" alt="Logo">
+            </a>
+          </li>
+          <!-- <li id="search"> -->
+          <li class="search-background">
+            <input id="search-keyword" type="text" name="textMail" placeholder="  What are you looking for today?" />
+            <button class='btn-search'>
+              <i class="fa fa-search"></i>
+            </button>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="Home()">Home</a>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="filterGender()">Gender</a>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="filterClothes()">Clothes</a>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="filterShoe()">Shoe</a>
+          </li>
+          <li>
+            <a href="#" class="active" onclick="filterDeals()">Deals</a>
+          </li>
+          <li>
+            <a href="#footer" class="active">Services</a>
+          </li>
+          <li>
+            <a href='#' class="cart">
+              <span class="icon-cart">
+                <span href="#" id="shopping-cart">
+                  <span class="shopping-cart" style="font-size:36px"></span>
+                </span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <span id="count-item" data-count="0">0 item</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <p class="welcome"> Shopping with Tommy Hilfiger</p>
+
+  <div id="hometext-slide">
+    <marquee class="slide-welcome">
+      <p class="running-text">
+        <strong>
+          <span style="color:#34495E">Thank you for visiting our store!!</span>
+          <span style="color:#FDFEFE"></span>
+          <span style="color:#EC7063"></span>
+        </strong>
+      </p>
+    </marquee>
+  </div>
+
+  <div id="p1" >   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSG9INA4TO0MEhDWOYyVF3NC62kGvT1DRvjUQ&usqp=CAU" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSG9INA4TO0MEhDWOYyVF3NC62kGvT1DRvjUQ&usqp=CAU" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSG9INA4TO0MEhDWOYyVF3NC62kGvT1DRvjUQ&usqp=CAU" /> </div>
+  <div ><strong>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products and Orders  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NRC & NTC  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company Info and Inquiries </strong></div>
+  <div >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1844-430-6453 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1800-663-6453  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1800-663-6453 </div>
+    <div >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24 hours a day &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8am - 5pm PT  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7am - 4pm PT </div>
+      <div >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7 days a week &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monday - Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monday - Friday</div>
+      <br><br>  <div id="p1" >   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,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" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,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" /> </div> 
+      <div ><strong>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products and Orders  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Locator </strong></div>
+      <div >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chat with us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find retail stores near me</div>
+      <div >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24 hours a day</div>
+      <div >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7 days a week </div>
+      <footer id="footer">
+    <div class="footer-content">
+      <div class="col-1">
+        <h3>Shop</h3>
+        <ul>
+          <li>
+            <a href="#">Offer</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <h3>Support</h3>
+        <ul>
+          <li>
+            <a href="#">Live Chat</a>
+          </li>
+          <li>
+            <a href="#">Service Location</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <h3>About Us</h3>
+        <ul>
+          <li>
+            <a href="#">Name: Chesta Choudhary</a>
+          </li>
+          <li>
+            <a href="#">Email: cchesta@myseneca.ca</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <h3>Subcribe</h3>
+        <h4>Come fast and get discount</h4>
+        <p style="text-align: justify;">Sign up to know about latest edition, fashion and discounts.</p>
+          <form action="SignUpPage.html">
+  <input type="email" id="username" name="username" required>
+  <input type="submit" name="subcribe-button" onclick="email();">
+      </div>
+
+    </div>
+    <div class="following">
+      <h3>Follow Us</h3>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+  </footer>
+
+  <script>
+
+function email() {
+ var email = document.getElementById("username").value;
+ localStorage.setItem("value" , email);
+ window.location.href="SignUpPage.html";
+  
+    } 
+    
+    $(document).on('click', '.button-buy-now', function (event) {
+      event.preventDefault();
+
+      if($(this).hasClass('disable')) return false;
+      $(document).find('.button-buy-now').addClass('disable');
+      
+      var parent = $(this).parents('.product');
+      var cart = $(document).find('#shopping-cart');
+      var src = parent.find('img').attr('src');
+      var topLocation = parent.offset().top;
+      var leftLocation = parent.offset().left;
+
+      $('<img />', {
+        class: 'img-child',
+        src: src
+      }).appendTo('body').css({
+        'top': parseInt(topLocation),
+        'left': parseInt(leftLocation) + 145
+      });
+
+      setTimeout(function () {
+        $(document).find('.img-child').css({
+          'top': cart.offset().top,
+          'left': cart.offset().left
+        });
+        setTimeout(function () {
+          $(document).find('.img-child').remove();
+          $(document).find('.button-buy-now').removeClass('disable');
+        }, 1100);
+      }, 400)
+    });
+  </script>
+
+<script>
+    filterGender = () => {
+      let filterProducts = document.querySelector('.list-products')
+      filterProducts.innerHTML = ''
+      productsGender = products.filter(x => x.category === 'Gender')
+
+      filterProducts.innerHTML = productsGender.map((item, index) =>
+        `<div class="product" index=${index}> 
+          <div class="img-product">
+            <a href="#"><img src='${item.image}' /></a>
+            <div class="link-detail-cart">
+              <a name="active-ele" class="link-detail" onclick="handleShowDesc(${index})" >
+                <i class="fa fa-info"></i>
+              </a>
+              <a href="javascript:void(0)" class='add-to-cart button-buy-now'>
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        <div class='name-price'>
+          <a href="#">${item.name} </a>
+          <span>${item.price}</span>
+          <span>${item.priceSale}</span>
+        </div>
+        <div class="brand-product"><a href="#">${item.brand}</a></div>
+        <div index=${index} name='description-product' class="description">
+          <p>${item.desc}</p>
+          <button onclick="handleIgnoreDesc(${index})">X</button>
+        </div>
+      </div>`
+      ).join('')
+    }
+
+    filterClothes = () => {
+      let filterProducts = document.querySelector('.list-products')
+      filterProducts.innerHTML = ''
+      productsClothes = products.filter(x => x.category === 'Clothes')
+
+      filterProducts.innerHTML = productsLaptop.map((item, index) =>
+        `<div class="product" index=${index}> 
+          <div class="img-product">
+            <a href="#"><img src='${item.image}' /></a>
+            <div class="link-detail-cart">
+              <a name="active-ele" class="link-detail" onclick="handleShowDesc(${index})" >
+                <i class="fa fa-info"></i>
+              </a>
+              <a href="javascript:void(0)" class='add-to-cart button-buy-now'>
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        <div class='name-price'>
+          <a href="#">${item.name} </a>
+          <span>${item.price}</span>
+          <span>${item.priceSale}</span>
+        </div>
+        <div class="brand-product"><a href="#">${item.brand}</a></div>
+        <div index=${index} name='description-product' class="description">
+          <p>${item.desc}</p>
+          <button onclick="handleIgnoreDesc(${index})">X</button>
+        </div>
+      </div>`
+      ).join('')
+    }
+
+
+    filterShoe = () => {
+      let filterProducts = document.querySelector('.list-products')
+      filterProducts.innerHTML = ''
+      productsShoe = products.filter(x => x.category === 'Shoe')
+
+
+      filterProducts.innerHTML = productsShoe.map((item, index) =>
+        `<div class="product" index=${index}> 
+          <div class="img-product">
+            <a href="#"><img src='${item.image}' /></a>
+            <div class="link-detail-cart">
+              <a name="active-ele" class="link-detail" onclick="handleShowDesc(${index})" >
+                <i class="fa fa-info"></i>
+              </a>
+              <a href="javascript:void(0)" class='add-to-cart button-buy-now'>
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        <div class='name-price'>
+          <a href="#">${item.name} </a>
+          <span>${item.price}</span>
+          <span>${item.priceSale}</span>
+        </div>
+        <div class="brand-product"><a href="#">${item.brand}</a></div>
+        <div index=${index} name='description-product' class="description">
+          <p>${item.desc}</p>
+          <button onclick="handleIgnoreDesc(${index})">X</button>
+        </div>
+      </div>`).join('')
+    }
+
+    filterDeals = () => {
+      let filterProducts = document.querySelector('.list-products')
+      filterProducts.innerHTML = ''
+
+      productsDeals = products.filter(x => x.deal === 'Yes')
+
+      filterProducts.innerHTML = productsDeals.map((item, index) =>
+        `<div class="product" index=${index}> 
+          <div class="img-product">
+            <a href="#"><img src='${item.image}' /></a>
+            <div class="link-detail-cart">
+              <a name="active-ele" class="link-detail" onclick="handleShowDesc(${index})" >
+                <i class="fa fa-info"></i>
+              </a>
+              <a href="javascript:void(0)" class='add-to-cart button-buy-now'>
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        <div class='name-price'>
+          <a href="#">${item.name} </a>
+          <span>${item.price}</span>
+          <span>${item.priceSale}</span>
+        </div>
+        <div class="brand-product"><a href="#">${item.brand}</a></div>
+        <div index=${index} name='description-product' class="description">
+          <p>${item.desc}</p>
+          <button onclick="handleIgnoreDesc(${index})">X</button>
+        </div>
+      </div>`
+
+      ).join('')
+    }
+
+    handleShowDesc = (index) => {
+      let target = document.querySelectorAll('div[name=description-product]')
+      console.log('target element', targetEle)
+      for (let i = 0; i < targetEle.length; i++) {
+        target[i].classList.remove('active-ele')
+      }
+      target[index].classList.add('active-ele')
+    }
+
+    handleIgnoreDesc = () => {
+      let target = document.querySelectorAll('div[name=description-product]')
+      for (let i = 0; i < target.length; i++) {
+        target[i].classList.remove('active-ele')
+      }
+    }
+  </script>
+
+</body>
+
+</html>

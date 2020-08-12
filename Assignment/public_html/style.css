@@ -11,10 +11,15 @@ and open the template in the editor.
 {
   font-family: "Comic Sans MS", cursive, sans-serif, 'Rowdies', cursive;;
 }
+
+
 .fixed-top{
   background: darkblue;
   height: 50px;
 }
+
+
+
 #menu-top {
   font-family: Tahoma;
   font-size: 13px;
